@@ -1,46 +1,106 @@
-# Getting Started with Create React App
+# About
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# See it live
 
-## Available Scripts
+# Screenshots
 
-In the project directory, you can run:
+# This project used:
 
-### `npm start`
+## In General
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+- Folder organization in which content is in a descriptive folder with index file and optional files
+  - Types are kept in types.ts
+  - Styles are kept in styles.ts
+  - Tests are kept in tests.ts
+  - Local components are kept in /components local folder with same structure
+  - Local hooks are kept in /hooks local folder
+  - Local translations are kept in /localization local folder
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## On Components
 
-### `npm test`
+- Props extending HTML tags and with component name as prefix
+- Ref forwarding
+- Arias: busy & disabled,
+- Props order: "rest & ref", "arias", "props"
+- ConditionalStatements & Returns section
+- Maps
+- Styled Component
+- "S" namespace for Styled Components
+- Styles with propStyles variable
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## On Styles and Theming
 
-### `npm run build`
+- DefaultStyles variable & file
+- ResetStyles variable & file
+- Animations variable & file
+- Global Styles
+- MUI Custom Theming
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## On Context
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- Error handling
+- "value" variable with "get" and "set" objects to organize better
+- Memo to memoize "value" and help with unecessary re-renders
+- Categorized content sections as "Utility Information" and others by necessity
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## As libs
 
-### `npm run eject`
+- React Icons
+- Styled Components
+- Material UI (with Styled Component support libs)
+- Framer Motion
+- Immer (and use-immer)
+- Typescript
+- Jest, React Testing Library, User Event and MSW (Mock Service Worker)
+- Prettier and ESLint (ESLint Plugin Jest included)
+- i18n (i18next)
+- Craco (to override Create React App configuration and allow Styled Components with MUI)
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+# Useful Specific Libs
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- Routes handling: npm i react-router-dom
+- Requests Handling: npm i axios
+- Form Handling: npm i react-hook-form
+- Manipulating Tab Text: npm i react-helmet-async
+- Date Operations: npm i date-fns
+- Calendar/Date Picker: npm i react-day-picker
+- Dropzone: npm i react-dropzone
+- Text Editor: npm i react-draft-wysiwyg draft-js
+- Menus: npm i @szhsin/react-menu (if MUI is not satisfactory, use this one)
+- Tutorials: npm i reactour (needs Styled Components)
+- Complex Animations: npm i react-lottie (After Effects style)
+- Chart Creation: npm i react-chartjs-2 chart.js
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+# Folder Structure inside Global and Pages:
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+## Rules
 
-## Learn More
+- Only folders, index files and aggregator files
+- Folders must have category names or descriptive names
+  - Descriptive folders are used if there is a need for more than one file in said category
+- Aggregator files gather all descriptive name folder contents into one file
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+That means: inside any folder we can have any number of categories, depending of usage, recursively
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Categories:
+
+- components: holds React components
+- constants: holds data that does not change
+- contexts: holds React contexts
+- hooks: holds React hooks
+- resources: holds media files (images, vectors, videos, subtitles, music, sfx, 3d, rigs)
+- styles: holds stylization files
+- tests: holds test files
+- types: holds type files
+- utilities: holds pure functions
+
+## Examples of concepts that use various categories:
+
+- animation: constants, styles, utilities, resources
+- api: constants, utilities, hooks
+- translation: constants
+
+## Todo:
+
+- Create branch with Router Dom
+- Create branch with Axios
