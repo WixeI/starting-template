@@ -1,12 +1,7 @@
-import Button from '../../global/components/Button';
-import * as S from './styles';
+import { Box } from '../../global/components/Box';
 
 const Home = () => {
-  return (
-    <S.Wrapper>
-      <Button variant="solid">Teste</Button>
-    </S.Wrapper>
-  );
+  return <Box css={{ p: 3 }}>Home</Box>;
 };
 
 export default Home;

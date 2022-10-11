@@ -1,5 +1,5 @@
 import { ReactNode, Dispatch } from 'react';
-import { User, Users } from '../users';
+import { User, Users } from './users';
 
 //Context Types Information
 export interface ContextProps {
